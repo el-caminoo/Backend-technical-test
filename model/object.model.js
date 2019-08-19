@@ -1,11 +1,11 @@
-const mongoose = require('mongoose');
-const schema = mongoose.Schema;
+const instance = [
+    {
+        id: 1,
+        type: "durban",
+        crux: "indices",
+        color: "green",
+        title: "indict the idiot"
+    }
+];
 
-let objectSchema = new schema({
-    type: {type: String},
-    crux: {type: String},
-    color: {type: String},
-    title: {type: String}
-})
-
-module.exports = mongoose.model('Attribute', objectSchema);
+module.exports = instance;
