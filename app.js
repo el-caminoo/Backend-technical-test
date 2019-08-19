@@ -49,7 +49,7 @@ app.patch('/remove/:id', (req, res) => {
         };
         db.splice(itemIndex, 1, updatedInstance);
         return res.status(201).send({
-            success: "true",
+            'success': "true",
             message: "successfully updated",
             db: updatedInstance
         });
